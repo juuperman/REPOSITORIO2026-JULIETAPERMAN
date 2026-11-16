@@ -1,3 +1,4 @@
+//2-Realizar una tabla de verdad para una compuerta AND y OR almacenando los datos en una matriz, luego, imprimir esa matriz en formato de tabla. 
 #include <stdio.h>
 
 int main() {
