@@ -1,3 +1,5 @@
+//1- Crear un código en C que le permita al usuario modificar los datos de un vector y luego que el programa imprima los datos 1 por 1. 
+
 #include <stdio.h>
 int vector [5],x,n;
 int main()
