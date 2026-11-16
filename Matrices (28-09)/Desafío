@@ -26,7 +26,7 @@ int main() {
         scanf("%d %d %d", &XOR[i][0], &XOR[i][1], &XOR[i][2]);
     }
 
-    printf("\nAND:\n");
+    printf("AND:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", AND[i][j]);
@@ -34,7 +34,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nOR:\n");
+    printf("OR:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", OR[i][j]);
@@ -42,7 +42,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nXOR:\n");
+    printf("XOR:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", XOR[i][j]);
@@ -80,7 +80,7 @@ int main() {
         scanf("%d %d %d", &XOR[i][0], &XOR[i][1], &XOR[i][2]);
     }
 
-    printf("\nAND:\n");
+    printf("AND:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", AND[i][j]);
@@ -88,7 +88,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nOR:\n");
+    printf("OR:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", OR[i][j]);
@@ -96,7 +96,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nXOR:\n");
+    printf("XOR:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", XOR[i][j]);
@@ -104,7 +104,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nNAND:\n");
+    printf("NAND:\n");
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", NAND[i][j]);
