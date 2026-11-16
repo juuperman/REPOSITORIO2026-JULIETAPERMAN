@@ -1,3 +1,5 @@
+//1-Realizar un código que me permita almacenar datos en una matriz bidimensional de 3x2. 
+//1.a - Una vez realizado, modificar este código para que la matriz sea tridimensional. 
 #include <stdio.h>
 
 int main() {
