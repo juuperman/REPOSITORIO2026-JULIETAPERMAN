@@ -1,0 +1,2 @@
+//DESAFÍO PEDRO OLIVA: (ESTRUCTURAS). Genere una estructura de tipo “Paciente” utilizando typedef que contenga: Edad, Iniciales, Tipo de sangre, Altura 
+// a) Luego, que el usuario indique estos valores y pueda imprimir cualquiera de ellos cuantas veces desee. 
