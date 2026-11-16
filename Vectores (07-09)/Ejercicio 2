@@ -1,3 +1,5 @@
+//2- Crear un código que una vez indicados los datos que almacena un vector, sume todos sus datos y los imprima. 
+//2.a -Una vez realizado, calcule el promedio de esos datos. 
 #include <stdio.h>
 int vector[4];
 int x, suma;
