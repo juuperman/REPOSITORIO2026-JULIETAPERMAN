@@ -1,2 +1,77 @@
 //DESAFÍO PEDRO OLIVA: (ESTRUCTURAS). Genere una estructura de tipo “Paciente” utilizando typedef que contenga: Edad, Iniciales, Tipo de sangre, Altura 
 // a) Luego, que el usuario indique estos valores y pueda imprimir cualquiera de ellos cuantas veces desee. 
+
+#include <stdio.h>
+
+typedef struct {
+    int edad;
+    char iniciales[10];
+    char sangre[5];
+    float altura;
+} Paciente;
+
+int main() {
+    Paciente paciente;
+
+    return 0;
+}
+
+a)
+#include <stdio.h>
+
+typedef struct {
+    int edad;
+    char iniciales[10];
+    char sangre[5];
+    float altura;
+} Paciente;
+
+int main() {
+    Paciente paciente;
+    int opcion;
+    char seguir = 's';
+
+    printf("Ingrese la edad: ");
+    scanf("%d", &paciente.edad);
+
+    printf("Ingrese las iniciales: ");
+    scanf("%s", paciente.iniciales);
+
+    printf("Ingrese el tipo de sangre: ");
+    scanf("%s", paciente.sangre);
+
+    printf("Ingrese la altura: ");
+    scanf("%f", &paciente.altura);
+
+    while (seguir == 's') {
+        printf("\nQue dato desea consultar?\n");
+        printf("1. Edad\n");
+        printf("2. Iniciales\n");
+        printf("3. Tipo de sangre\n");
+        printf("4. Altura\n");
+        scanf("%d", &opcion);
+
+        if (opcion == 1) {
+            printf("Edad: %d\n", paciente.edad);
+        }
+        else if (opcion == 2) {
+            printf("Iniciales: %s\n", paciente.iniciales);
+        }
+        else if (opcion == 3) {
+            printf("Tipo de sangre: %s\n", paciente.sangre);
+        }
+        else if (opcion == 4) {
+            printf("Altura: %.2f\n", paciente.altura);
+        }
+        else {
+            printf("Opcion no permitida\n");
+        }
+
+        printf("Desea consultar otro dato? Ingrese s o n: ");
+        scanf(" %c", &seguir);
+    }
+
+    printf("Programa finalizado");
+
+    return 0;
+}
