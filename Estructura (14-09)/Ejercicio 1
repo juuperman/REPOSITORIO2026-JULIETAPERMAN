@@ -1,3 +1,5 @@
+// 1-Definir una estructura de datos que contenga el nombre de un alumno, edad y año al que pertenece. Luego, que el código imprima esos datos. 
+// 1.a- Hacer que el usuario pueda modificar esos datos y luego que imprima esos datos modificados por el usuario. 
 #include <stdio.h>
 
 struct Alumno {
