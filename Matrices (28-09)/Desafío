@@ -1,2 +1,116 @@
 //DESAFÍO PEDRO OLIVA: (MATRICES). Realizar un código que me permita completar la tabla de verdad de una compuerta AND, OR y XOR. Luego, que imprima las 3 matrices de manera ordenada. 
 //a) Ahora, definir una matriz de la tabla de verdad de una compuerta NAND y que se imprima junto a las otras 3 matrices que modifica el usuario. 
+
+#include <stdio.h>
+
+int main() {
+    int AND[4][3];
+    int OR[4][3];
+    int XOR[4][3];
+
+    printf("Complete la tabla AND:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &AND[i][0], &AND[i][1], &AND[i][2]);
+    }
+
+    printf("Complete la tabla OR:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &OR[i][0], &OR[i][1], &OR[i][2]);
+    }
+
+    printf("Complete la tabla XOR:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &XOR[i][0], &XOR[i][1], &XOR[i][2]);
+    }
+
+    printf("\nAND:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", AND[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nOR:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", OR[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nXOR:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", XOR[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+a)
+#include <stdio.h>
+
+int main() {
+    int AND[4][3];
+    int OR[4][3];
+    int XOR[4][3];
+    int NAND[4][3] = {{0,0,1}, {0,1,1}, {1,0,1}, {1,1,0}};
+
+    printf("Complete la tabla AND:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &AND[i][0], &AND[i][1], &AND[i][2]);
+    }
+
+    printf("Complete la tabla OR:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &OR[i][0], &OR[i][1], &OR[i][2]);
+    }
+
+    printf("Complete la tabla XOR:\n");
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese los valores de A, B y resultado: ");
+        scanf("%d %d %d", &XOR[i][0], &XOR[i][1], &XOR[i][2]);
+    }
+
+    printf("\nAND:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", AND[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nOR:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", OR[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nXOR:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", XOR[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nNAND:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", NAND[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
