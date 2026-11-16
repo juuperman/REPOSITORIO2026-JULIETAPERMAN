@@ -1,0 +1,39 @@
+//Lo hice con el código del ejercicio 3 de vectores (07-11)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    int cantidad;
+    int vector[100];
+    int posicion;
+    char seguir[20] = "continuar";
+
+    printf("Ingrese la cantidad de datos del vector: ");
+    scanf("%d", &cantidad);
+
+    for (int i = 0; i < cantidad; i++) {
+        printf("Ingrese el dato %d: ", i + 1);
+        scanf("%d", &vector[i]);
+    }
+
+    while (strcmp(seguir, "continuar") == 0) {
+        printf("Ingrese la posicion del dato que quiere consultar (1-%d): ", cantidad);
+        scanf("%d", &posicion);
+
+        if (posicion >= 1 && posicion <= cantidad) {
+            printf("El dato en la posicion %d es: %d\n", posicion, vector[posicion - 1]);
+        }
+        else {
+            printf("ERROR\n");
+        }
+
+        printf("¿Queres consultar otro dato? Ingrese continuar o finalizar: ");
+        scanf("%s", seguir);
+    }
+
+    printf("Programa finalizado");
+
+    return 0;
+}
