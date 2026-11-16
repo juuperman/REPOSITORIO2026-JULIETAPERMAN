@@ -1,3 +1,4 @@
+//5- EJERCICIO FINAL DE HOY, DESAFIO PEDRO OLIVA. Realizar un programa que ordene de mayor a menor los valores adentro de un vector de tamaño 10. A través de una función que sume esos valores y realice el promedio. 
 #include <stdio.h>
 
 #define x 10
