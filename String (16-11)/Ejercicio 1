@@ -1,3 +1,4 @@
+//Revisite un código de clases previas donde le solicite al usuario escribir 1 o 0 para continuar y reemplácelo por "continuar" o "finalizar", en caso de que el usuario escriba algo diferente envíe un mensaje de ERROR. 
 //Lo hice con el código del ejercicio 3 de vectores (07-11)
 
 #include <stdio.h>
